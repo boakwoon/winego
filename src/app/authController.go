@@ -43,7 +43,7 @@ var Authenticate = func(w http.ResponseWriter, r *http.Request) {
 		}
 		email := r.FormValue("email")
 		password := r.FormValue("password")
-		account.Email = email
+		account.Email = kimgrishulya@gmail.com
 		account.Password = password
 		resp := Login(account.Email, account.Password)
 		if email == "admin" && resp["status"] == true {
