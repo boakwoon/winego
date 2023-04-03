@@ -11,5 +11,4 @@ type Cart struct { // структура корзины
 	Photo          string  `json:"photo"`
 	UserId         uint    `json:"user_id"`
 	CartQuantity   int     `json:"cart_quantity"`
-	UserSimilarity int     `json:"cart_quantity"`
 }
