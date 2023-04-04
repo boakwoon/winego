@@ -2,7 +2,6 @@
 *.js linguist-detectable=false
 *.html linguist-detectable=false
 *.css linguist-detectable=false
-*.ipynb linguist-detectable=false
 *.python linguist-detectable=false
 *.r linguist-detectable=false
 *.julia linguist-detectable=false
