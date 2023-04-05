@@ -5,3 +5,4 @@
 *.python linguist-detectable=false
 *.r linguist-detectable=false
 *.julia linguist-detectable=false
+*.ipynb linguist-detectable=false
