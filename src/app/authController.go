@@ -47,7 +47,7 @@ var Authenticate = func(w http.ResponseWriter, r *http.Request) {
 		account.Password = password
 		resp := Login(account.Email, account.Password)
 		if email == "admin" && resp["status"] == true {
-			http.Redirect(w, r, "/panel", http.StatusFound)
+			http.Redirect(w, "/panel", http.StatusFound)
 		} else {
 			if resp["status"] == true {
 				CurrentUserId = GetUser(email).ID
