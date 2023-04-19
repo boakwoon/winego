@@ -7,11 +7,11 @@ import (
 	"net/http"
 )
 
-func Home(w http.ResponseWriter, r *http.Request) { // функция-обработчик для домашней страницы
+func Home(w http.ResponseWriter, r *http.Request) {
 
 	products, _ := productmodel.FindByPath(w, r)
 	data := map[string]interface{}{
-		"products": products, // all products
+		"products": products,
 	}
 
 	ts, err := template.ParseFiles("../static/html/index.html")
