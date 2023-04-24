@@ -18,7 +18,4 @@ func rateItem(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		// Handle error
 	}
-
-	// Redirect to item detail page
-	http.Redirect(w, r, "/item?id="+itemID, http.StatusFound)
 }
